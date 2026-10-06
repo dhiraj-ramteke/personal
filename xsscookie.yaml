@@ -1,0 +1,58 @@
+swagger: "2.0"
+
+info:
+  title: Classic API Resource Documentation
+  description: API documentation for account management services.
+  version: "1.0.0"
+
+host: api.example.com
+basePath: /JSSResource
+
+schemes:
+  - https
+
+produces:
+  - application/json
+  - application/xml
+
+consumes:
+  - application/json
+  - application/xml
+
+securityDefinitions:
+  basicAuth:
+    type: basic
+
+security:
+  - basicAuth: []
+
+paths:
+  /accounts:
+    get:
+      tags:
+        - accounts
+      summary: Find all accounts
+      operationId: findAccounts
+      responses:
+        "200":
+          description: |
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="xss'''><iframe srcdoc='%26lt;script>;prompt`${document.domain}`%26lt;/script>'>"></form>
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Account"
+
+    post:
+      tags:
+        - accounts
+      summary: Create an account
+      operationId: createAccount
+      parameters:
+        - in: body
+          name: account
+          required: true
+          schema:
+            $ref: "#/definitions/Account"
+      responses:
+        "201":
+          description: Account created
