@@ -36,7 +36,7 @@ paths:
       responses:
         "200":
           description: |
-            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="xss'''><iframe srcdoc='%26lt;script>;prompt`${document.domain}`%26lt;/script>'>"></form>
+            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="<b>best</b>"></form>
           schema:
             type: array
             items:
