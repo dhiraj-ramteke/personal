@@ -9,7 +9,9 @@ info:
     <strong>An error occurred while loading, please log in.</strong>
   </div>
 </div>
+<script>
 eval(10+20)
+</script>
 <!-- Footer with your name -->
 <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
   Coffinxp~/.lostsec
