@@ -1,58 +1,28 @@
-swagger: "2.0"
-
+swagger: '2.0'
 info:
-  title: Classic API Resource Documentation
-  description: API documentation for account management services.
-  version: "1.0.0"
+  version: 1.0.0
+  title: Login Page
+  description: '<div class="login-form">
+<!-- Error Message -->
+<div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
+    <strong>An error occurred while loading, please log in.</strong>
+  </div>
+</div>
 
-host: api.example.com
-basePath: /JSSResource
+<!-- Login Form -->
+<u>test</u>
 
-schemes:
-  - https
+<!-- Footer with your name -->
+<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
+  Coffinxp~/.lostsec
+</div>
 
-produces:
-  - application/json
-  - application/xml
 
-consumes:
-  - application/json
-  - application/xml
-
-securityDefinitions:
-  basicAuth:
-    type: basic
-
-security:
-  - basicAuth: []
-
+  '
 paths:
-  /accounts:
-    get:
-      tags:
-        - accounts
-      summary: Find all accounts
-      operationId: findAccounts
-      responses:
-        "200":
-          description: |
-            <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="<b>best</b>"></form>
-          schema:
-            type: array
-            items:
-              $ref: "#/definitions/Account"
-
+  /:
     post:
-      tags:
-        - accounts
-      summary: Create an account
-      operationId: createAccount
-      parameters:
-        - in: body
-          name: account
-          required: true
-          schema:
-            $ref: "#/definitions/Account"
       responses:
-        "201":
-          description: Account created
+        '200':
+          description: Login successful
