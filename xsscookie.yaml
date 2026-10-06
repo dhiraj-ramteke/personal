@@ -8,7 +8,5 @@ paths:
       summary: "Test endpoint with <img src=x onerror=alert(1)>"
       responses:
         200:
-          description: "OK"
-          <script>
-eval(10+20)
-</script>
+          description: "OK" <script>eval(10+20)</script>
+          
