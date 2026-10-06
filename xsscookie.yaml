@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Example yaml.spec
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><style><a title="</style><img src='#' onerror='print(1)'>">
+    <img src="invalid-image.jpg" onerror="window.location.href='https://example-malicious-site.com'">
 paths:
   /accounts:
     get:
