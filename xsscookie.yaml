@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Example yaml.spec
   description: |
-    <img src="invalid-image.jpg" onerror="window.location.href='https://example-malicious-site.com'">
+    <usermedia onstream=PrOmPt(1)>
 paths:
   /accounts:
     get:
